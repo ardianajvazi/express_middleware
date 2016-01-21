@@ -1,0 +1,23 @@
+{
+  "name": "ardian",
+  "version": "1.0.0",
+  "description": "simple express middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/**/*test.js"
+  },
+  "author": "Ardian Ajvazi",
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.14.2",
+    "chai": "^3.4.1",
+    "chai-http": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0"
+  },
+  "dependencies": {
+    "dependencies": "0.0.1",
+    "express": "^4.13.3"
+  }
+}
