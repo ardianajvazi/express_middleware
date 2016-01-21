@@ -1,4 +1,4 @@
-module.exports = exports = (err, req, res, next) => {
+module.exports = exports = (req, res, next) => {
   var string = '';
 
   req.on('data', (data) => {
