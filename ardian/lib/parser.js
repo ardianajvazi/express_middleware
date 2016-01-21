@@ -1,6 +1,6 @@
 module.exports = exports = (req, res, next) => {
   var string = '';
-  
+
   req.on('data', (data) => {
     string += data.toString();
   });
@@ -9,7 +9,7 @@ module.exports = exports = (req, res, next) => {
       req.body = JSON.parse(string);
       console.log('saved');
       next();
-    } catch (e) {
+    } catch (err) {
       res.status(400).send({msg: 'invalid json'});
       res.end();
     }

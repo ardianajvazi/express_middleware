@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const parser = require(__dirname + '/lib/parser');
 
-const helloRouter = express.Router();
+
 var port = 3000;
 
 app.get('/', (req, res) => {
@@ -14,6 +14,7 @@ app.post('/data', parser, (req, res) => {
   res.end();
 });
 
+
 app.listen(port, () => {
-  console.log('Server up on port ' + port)
+  console.log('Server up on port ' + port);//eslint-disable-line
 });
